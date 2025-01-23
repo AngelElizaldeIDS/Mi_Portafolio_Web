@@ -30,7 +30,7 @@ header {
 
 
 header h2 {
-    color:   #ff4922;
+    color:   #CC0000;
 }
 
 h2 .link_portafolio{
@@ -49,7 +49,7 @@ h2 .link_portafolio{
 }
 
 .menu a:hover, .link_portafolio:hover, span {
-    color: #ff4922;
+    color: #CC0000;
 }
 
 /*Presentacion */
@@ -57,16 +57,18 @@ h2 .link_portafolio{
     height: 20rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
 }
 
 .perfil {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .foto_perfil {
     width: 30rem;
-    height: 30rem;
+    height: 27.1rem;
     object-fit: cover;
 }
 
@@ -82,3 +84,128 @@ h2 .link_portafolio{
     text-align:justify;
     line-height: 1.5;
 }
+
+.links {
+    display: flex;
+}
+
+.links a {
+    margin: 2rem 1rem;
+    justify-content: center;
+}
+
+a img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.buscar {
+    color: #CC0000;
+    background-color: transparent;
+    border-radius: 1rem;
+    padding: 0.7rem 2.2rem;
+    border-color: #CC0000;
+    font-weight: 800;
+}
+
+/*responsive */
+
+/* Teléfonos pequeños */
+@media (max-width: 360px) {
+
+    .saludo h1 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    a {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.5rem;
+        margin: 0 1rem;
+        text-align: center;
+    }
+   header {
+        display: flex;
+        display: inline;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem ;
+        line-height: 2rem;
+
+    }
+
+    .presentacion {
+        display: flex;
+        display: inline;
+
+    }
+
+
+    a img {
+        width: 1.5rem;
+        height: 1.5rem;
+        
+    }
+
+    .links {
+        justify-content: center;
+    }
+
+    .buscar {
+        background-color: transparent;
+        border-radius: 1rem;
+        padding: 0.7rem 2.2rem;
+        font-weight: 800;
+        align-items: center;
+    }
+
+    .foto_perfil {
+        width: 10rem;
+        height: 10rem;
+    }
+
+
+    
+  }
+  
+  /* Teléfonos medianos */
+  @media (max-width: 480px) {
+    /* Estilos específicos */
+  }
+  
+  /* Teléfonos grandes */
+  @media (max-width: 600px) {
+    /* Estilos específicos */
+  }
+  
+  /* Tabletas pequeñas */
+  @media (max-width: 768px) {
+    /* Estilos específicos */
+  }
+  
+  /* Tabletas grandes */
+  @media (max-width: 992px) {
+    /* Estilos específicos */
+  }
+  
+  /* Escritorios pequeños */
+  @media (max-width: 1200px) {
+    /* Estilos específicos */
+  }
+  
+  /* Escritorios grandes */
+  @media (min-width: 1201px) {
+    /* Estilos específicos */
+  }
