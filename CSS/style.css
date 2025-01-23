@@ -106,33 +106,40 @@ a img {
     padding: 0.7rem 2.2rem;
     border-color: #CC0000;
     font-weight: 800;
+    cursor: pointer;
+}
+
+.boton {
+    height: 10rem;
 }
 
 /*responsive */
 
-/* Teléfonos pequeños */
-@media (max-width: 360px) {
-
-    .saludo h1 {
-        font-size: 1rem;
-        text-align: center;
-    }
-
+@media (max-width: 600px) {
+    /* Titulos y parrafos */
     h2 {
-        font-size: 1rem;
+        font-size: 1.9rem;
         text-align: center;
+        margin-top: 1rem;
     }
 
-    a {
-        font-size: 1rem;
+     a {
+        font-size: 1.5rem;
     }
 
     p {
-        font-size: 0.5rem;
+        font-size: 1rem;
         margin: 0 1rem;
         text-align: center;
     }
-   header {
+
+    .saludo h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+
+    header {
         display: flex;
         display: inline;
     }
@@ -152,15 +159,18 @@ a img {
 
     }
 
-
-    a img {
-        width: 1.5rem;
-        height: 1.5rem;
-        
+    .foto_perfil {
+        width: 15rem;
+        height: 15rem;
     }
 
     .links {
         justify-content: center;
+    }
+
+    a img {
+        width: 2rem;
+        height: 2rem;
     }
 
     .buscar {
@@ -171,41 +181,86 @@ a img {
         align-items: center;
     }
 
+    .boton{
+        margin: 0 13.5rem;
+    }
+
+  }
+
+
+/* Teléfonos pequeños */
+@media (max-width: 320px) {
+
+    /* Titulos y parrafos */
+     h2 {
+        font-size: 0.9rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+     a {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.5rem;
+        margin: 0 1rem;
+        text-align: center;
+    }
+
+    .saludo h1 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    header {
+        display: flex;
+        display: inline;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem ;
+        line-height: 2rem;
+
+    }
+
+    .presentacion {
+        display: flex;
+        display: inline;
+
+    }
+
     .foto_perfil {
         width: 10rem;
         height: 10rem;
     }
 
+    .links {
+        justify-content: center;
+    }
 
-    
-  }
+    a img {
+        width: 1.5rem;
+        height: 1.5rem;
+        
+    }
+
+    .buscar {
+        background-color: transparent;
+        border-radius: 1rem;
+        padding: 0.7rem 2.2rem;
+        font-weight: 800;
+        align-items: center;
+    }
+
+    .boton{
+        margin: 0 4.5rem;
+    }
+
+ }
   
-  /* Teléfonos medianos */
-  @media (max-width: 480px) {
-    /* Estilos específicos */
-  }
-  
-  /* Teléfonos grandes */
-  @media (max-width: 600px) {
-    /* Estilos específicos */
-  }
-  
-  /* Tabletas pequeñas */
-  @media (max-width: 768px) {
-    /* Estilos específicos */
-  }
-  
-  /* Tabletas grandes */
-  @media (max-width: 992px) {
-    /* Estilos específicos */
-  }
-  
-  /* Escritorios pequeños */
-  @media (max-width: 1200px) {
-    /* Estilos específicos */
-  }
-  
-  /* Escritorios grandes */
-  @media (min-width: 1201px) {
-    /* Estilos específicos */
-  }
+
+ 
