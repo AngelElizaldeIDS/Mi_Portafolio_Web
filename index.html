@@ -1,58 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/CSS/style.css" />
-    <link rel="stylesheet" href="/CSS/normalyze.css" />
-    <title>Mi Portafolio</title>
-  </head>
 
-  <body>
-    <header>
-      <h2>
-        Angel Uriel Elizalde Lopez
-        <a href="#" class="link_portafolio">Mi portafolio</a>
-      </h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/CSS/style.css" />
+  <link rel="stylesheet" href="/CSS/normalyze.css" />
+  <title>Mi Portafolio</title>
+</head>
 
-      <div class="menu">
-        <a href="#">Presentacion</a>
-        <a href="#">Habilidades</a>
-        <a href="#">Proyectos</a>
-        <a href="#">Contactame</a>
-      </div>
-    </header>
+<body>
+  <header>
+    <div class="titulo__header">
+      <h2>Angel Uriel Elizalde Lopez <span>Mi Portafolio</span></h2>
+    </div>
 
+      <nav>
+        <a href="" class="nav__header">Inicio</a>
+        <a href="" class="nav__header">Sobre Mi</a>
+        <a href="" class="nav__header">Contactame</a>
+        <a href="" class="nav__header">Contratame</a>
+      </nav>
+  </header>
+
+  <main>
     <div class="presentacion">
-      <div class="perfil">
-        <img src="/img/perfil_user.png" alt="" class="foto_perfil" />
+      <div class="foto">
+        <img src="/img/perfil_user.png" alt="" class="foto__perfil">
       </div>
 
-      <div class="saludo">
-        <h1>Hola, Mi Nombre Es <span>Angel Elizalde</span></h1>
-        <h2>Soy Ingeniero En <span>desarrollo De Software</span></h2>
-        <br />
-        <p>
-          Mi nombre es Ángel Uriel Elizalde López, tengo 19 años y actualmente
-          estudio la carrera de Ingeniería en Desarrollo de Software en la
-          Universidad Tecmilenio, campus Villahermosa. Durante mi formación, he
-          desarrollado habilidades en programación, diseño de aplicaciones web y
-          gestión de proyectos, aplicando tecnologías como Laravel, React, y
-          TailwindCSS.
-        </p>
-        
-        <div class="links">
-            <a href="#"><img src="/img/linkedin.png" alt=""></a>
-            <a href="#"><img src="/img/git.png" alt=""></a>
-            <a href="#"><img src="/img/insta.png" alt=""></a>
-            <a href="#"><img src="/img/face.png" alt=""></a>
+      <div class="sobremi">
+        <h1>Hola, Me Llamo <span>Angel Elizalde</span></h1>
+        <h2>Estoy En proceso De Ser Un <span>Ingeniero En desarrollo De Software</span></h2>
+
+        <P>Actualmente estoy cursando el cuarto semestre Enero-Mayo y presentando mi servicio social, Me gusta mucho la programacion web
+          y el desarrollo de aplicaciones moviles, me gusta aprender cosas nuevas y estar en constante crecimiento, me gusta mucho la musica
+          y los videojuegos, soy una persona muy responsable y comprometida con lo que hago, me gusta trabajar en equipo y aprender de los demas.
+        </P>
+
+        <div class="icons__redes">
+          <a href="#"><img src="/img/git2.png" alt=""></a>
+          <a href="#"><img src="/img/linkedin.png" alt=""></a>
+          <a href="#"><img src="/img/facebook.png" alt=""></a>
+          <a href="#"><img src="/img/instagram.png" alt=""></a>
         </div>
 
-        <div class="boton">
-        <button type="button" class="buscar">Contratame</button>
-        </div>
+        <input type="button" value="Descargar CV" class="btn__cv">
+      </div>
+    </div>
 
+
+    <div class="skills">
+      <h2>Mis Habilidades</h2>
+
+        <div class="img_skills">
+            <div class="targetas__skills">
+              <img src="/img/html-5.png" alt="">
+              <h2>HTML</h2>
+              <div class="progress-bar">
+                <div class="progress" data-percentage="99"></div>
+              </div>
+            </div>
+
+            <div class="targetas__skills">
+              <img src="/img/css-3.png" alt="">
+              <h2>CSS</h2>
+              <div class="progress-bar">
+                <div class="progress" data-percentage="60"></div>
+              </div>
+            </div>
+
+            <div class="targetas__skills">
+              <img src="/img/js.png" alt="">
+              <h2>JavaScript</h2>
+              <div class="progress-bar">
+                <div class="progress" data-percentage="55"></div>
+              </div>
+            </div>
+
+            <div class="targetas__skills">
+              <img src="/img/php.png" alt="">
+              <h2>PHP</h2>
+              <div class="progress-bar">
+                <div class="progress" data-percentage="60"></div>
+              </div>
+            </div>
+
+            <div class="targetas__skills">
+              <img src="/img/piton.png" alt="">
+              <h2>Python</h2>
+              <div class="progress-bar">
+                <div class="progress" data-percentage="67"></div>
+              </div>
+            </div>
+
+            <div class="targetas__skills">
+              <img src="/img/nodejs.png" alt="">
+              <h2>NodeJS</h2>
+              <div class="progress-bar">
+                <div class="progress" data-percentage="20"></div>
+              </div>
+            </div>
+
+              <div class="targetas__skills">
+                <img src="/img/visual-basico.png" alt="">
+                <h2>VisualStudio</h2>
+                <div class="progress-bar">
+                  <div class="progress" data-percentage="100"></div>
+                </div>
+              </div>
+
+              <div class="targetas__skills">
+                <img src="/img/servidor-sql.png" alt="">
+                <h2>MySQL</h2>
+                <div class="progress-bar">
+                  <div class="progress" data-percentage="40"></div>
+                </div>
+              </div>
+
+              <div class="targetas__skills">
+                <img src="/img/eng.png" alt="">
+                <h2>Ingles</h2>
+                <div class="progress-bar">
+                  <div class="progress" data-percentage="40"></div>
+                </div>
+              </div>
+        </div>
     </div>
+
+    <div class="miportafolio">
+      <h2>Mis trabajos: </h2>
     </div>
-  </body>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <p>Angel Uriel Elizalde Lopez &copy; 2025</p>
+    </div>
+  </footer>
+
+</body>
+
+<script src="/js/script.js"></script>
+
 </html>

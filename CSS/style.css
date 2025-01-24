@@ -4,263 +4,320 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
-    color: #fff;
     font-family: 'Open Sans', sans-serif;
-}
-
-h1, h2, h3 {
-    font-family: 'Montserrat', sans-serif;
-  }
-
-
-body {  
-    background-color: #0e0e0e;
+    color: #fff;
 }
 
 
-/*header */
-header {
+body {
+    background-color: #000;
+}
+/* Configuraciones */	
+
+.sobremi h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+span {
+    font-size: 1.5rem;
+}
+
+a {
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.foto__perfil {
+    width: 29rem;
+    height: 29rem;
+    border-radius: 50%;
+}
+
+p {
+    line-height: 1.5;
+    font-weight: 800;
+}
+
+a img{  /* Redes sociales */
+    width: 3rem;
+    height: 3rem;
+    margin: 0.5rem;
+}
+
+input{
+    padding: 1rem 3rem;
+}
+
+span {
+    color:  #b21f00
+    ;
+}
+
+/* header */
+
+header {    
     display: flex;
     justify-content: space-around;
-    height: 3rem;
-    color:  #000000;
+    margin-bottom: 2rem;
+    padding: 1rem;
     align-items: center;
+ 
+}
+
+
+nav a {
+    margin: 0.5rem;
+}
+
+nav a:hover {
+    color: #b21f00;
+    border-bottom: 2px solid #b21f00;
+}
+
+/* presentacion */
+
+.presentacion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 2rem;
+}
+
+.foto {
+    justify-self: center;
+    align-self: center;
+}
+
+.sobremi {
+    align-content: center;
+    width: 90%;
+}
+
+.sobremi h1, .sobremi h2, .sobremi p, .sobremi div, .sobremi input{
+    margin: 1rem;
+}
+
+a img{
+    transition-duration: 1s;
+}
+
+a img:hover {
+    scale: 1.2;
+}
+
+input{
+    color: #000;
+    background-color:  #f3ca00 ;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+input:hover {
+    background-color: #b21f00;
+    scale: 1.1;
+}
+
+
+/* skills */
+
+.skills {
+    background-color:   #151515;
+    text-align: center;
     margin: 1rem 0;
 }
 
-
-header h2 {
-    color:   #CC0000;
+.skills h2 {
+    margin: 3rem 0;
+    display: block;
+    text-align: center;
 }
 
-h2 .link_portafolio{
-    font-size: 0.9rem;
-    transition: color 0.3s ease, text-decoration-color 0.3s ease; 
-    text-decoration: none;
-}
-
-.menu a {
-    display: flex;
-    display: inline;
-    margin: 0 1rem;
-    text-decoration: none;
-    transition: color 0.3s ease, text-decoration-color 0.3s ease; 
-
-}
-
-.menu a:hover, .link_portafolio:hover, span {
-    color: #CC0000;
-}
-
-/*Presentacion */
-.presentacion {
-    height: 20rem;
+.img_skills {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.perfil {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.foto_perfil {
-    width: 30rem;
-    height: 27.1rem;
-    object-fit: cover;
-}
-
-
-.saludo {
-    display: flex;
-    display: inline;
-    width: 85%;
-}
-
-.saludo {
-    font-weight: 600;
-    text-align:justify;
-    line-height: 1.5;
-}
-
-.links {
-    display: flex;
-}
-
-.links a {
-    margin: 2rem 1rem;
-    justify-content: center;
-}
-
-a img {
-    width: 3rem;
-    height: 3rem;
-}
-
-.buscar {
-    color: #CC0000;
-    background-color: transparent;
+.targetas__skills{
+    margin: 1rem;
+    padding: 1rem;
+    background-color:  #d9b500 ;
     border-radius: 1rem;
-    padding: 0.7rem 2.2rem;
-    border-color: #CC0000;
-    font-weight: 800;
-    cursor: pointer;
+    transition-duration: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.boton {
-    height: 10rem;
-}
+.progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 1rem;
+    overflow: hidden;
+    height: 1rem;
+  }
+  
+  .progress {
+    height: 100%;
+    width: 0%; 
+    background-color:  #000000 ;
+    transition: width 1s ease-in-out; 
+    border-radius: 1rem;
+  }
 
-/*responsive */
+/* responsive */
+  
+  @media (min-width: 320px) and (max-width: 767px) {
 
-@media (max-width: 600px) {
-    /* Titulos y parrafos */
-    h2 {
-        font-size: 1.9rem;
-        text-align: center;
-        margin-top: 1rem;
-    }
-
-     a {
+    .sobremi h1 {
         font-size: 1.5rem;
     }
-
-    p {
+    
+    h2 {
         font-size: 1rem;
-        margin: 0 1rem;
+    }
+    
+    span {
+        font-size: 1rem;
+    }
+    
+    a {
+        font-size: 1rem;
+        text-decoration: none;
         text-align: center;
     }
-
-    .saludo h1 {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-
-    header {
-        display: flex;
-        display: inline;
-    }
-
-    .menu {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 1rem ;
-        line-height: 2rem;
-
-    }
-
-    .presentacion {
-        display: flex;
-        display: inline;
-
-    }
-
-    .foto_perfil {
-        width: 15rem;
-        height: 15rem;
-    }
-
-    .links {
-        justify-content: center;
-    }
-
-    a img {
+    
+    img {
         width: 2rem;
         height: 2rem;
     }
-
-    .buscar {
-        background-color: transparent;
-        border-radius: 1rem;
-        padding: 0.7rem 2.2rem;
-        font-weight: 800;
-        align-items: center;
+    
+    .foto__perfil {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
     }
-
-    .boton{
-        margin: 0 13.5rem;
-    }
-
-  }
-
-
-/* Teléfonos pequeños */
-@media (max-width: 320px) {
-
-    /* Titulos y parrafos */
-     h2 {
-        font-size: 0.9rem;
-        text-align: center;
-        margin-top: 1rem;
-    }
-
-     a {
-        font-size: 1rem;
-    }
-
+    
     p {
-        font-size: 0.5rem;
-        margin: 0 1rem;
-        text-align: center;
+        line-height: 1.5;
+        font-weight: 800;
+    }
+    
+    a img{  /* Redes sociales */
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: 0.5rem;
+    }
+    
+    input{
+        padding: 0.5rem 1.5rem;
     }
 
-    .saludo h1 {
-        font-size: 1rem;
-        text-align: center;
-    }
+    /* header */
 
-    header {
-        display: flex;
-        display: inline;
-    }
-
-    .menu {
+    header {    
         display: flex;
         flex-direction: column;
-        align-items: center;
-        margin-top: 1rem ;
-        line-height: 2rem;
+    }
 
+    nav {
+        display: flex;
+        flex-direction: column;
     }
 
     .presentacion {
         display: flex;
-        display: inline;
+        flex-direction: column;
+    }
+
+    .img_skills {
+        display: flex;
+        flex-direction: column;
+  }
 
     }
 
-    .foto_perfil {
+  @media (min-width: 768px) and (max-width: 991px) {
+    .sobremi h1 {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1rem;
+    }
+    
+    span {
+        font-size: 1rem;
+    }
+    
+    a {
+        font-size: 1rem;
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    img {
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    .foto__perfil {
         width: 10rem;
         height: 10rem;
+        border-radius: 50%;
     }
-
-    .links {
-        justify-content: center;
+    
+    p {
+        line-height: 1.5;
+        font-weight: 800;
     }
-
-    a img {
+    
+    a img{  /* Redes sociales */
         width: 1.5rem;
         height: 1.5rem;
-        
+        margin: 0.5rem;
+    }
+    
+    input{
+        padding: 0.5rem 1.5rem;
     }
 
-    .buscar {
-        background-color: transparent;
-        border-radius: 1rem;
-        padding: 0.7rem 2.2rem;
-        font-weight: 800;
-        align-items: center;
+    /* header */
+
+    header {    
+        display: flex;
+        flex-direction: column;
     }
 
-    .boton{
-        margin: 0 4.5rem;
+    nav {
+        display: flex;
+        flex-direction: column;
     }
 
- }
+    .presentacion {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img_skills {
+        display: flex;
+        flex-direction: column;
+  }
+  }
   
 
- 
+  @media (min-width: 1024px) and (max-width: 1279px) {
+
+  }
+  
+
+  
