@@ -193,7 +193,12 @@ input:hover {
     a {
         font-size: 1rem;
         text-decoration: none;
-        text-align: center;
+        text-align: center; 
+      
+    }
+
+    nav a {
+        display: none;
     }
     
     img {
@@ -263,6 +268,10 @@ input:hover {
         font-size: 1rem;
         text-decoration: none;
         text-align: center;
+    }
+
+    nav a {
+        display: none;
     }
     
     img {
