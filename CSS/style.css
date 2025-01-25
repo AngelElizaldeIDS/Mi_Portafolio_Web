@@ -88,7 +88,7 @@ nav a:hover {
 .presentacion {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
 }
 
 .foto {
@@ -132,14 +132,16 @@ input:hover {
 .skills {
     background-color:   #151515;
     text-align: center;
-    margin: 1rem 0;
+    padding-bottom: 2rem;
+
 }
 
 .skills h2 {
-    margin: 3rem 0;
-    display: block;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
 }
+
 
 .img_skills {
     display: grid;
@@ -174,6 +176,93 @@ input:hover {
     border-radius: 1rem;
   }
 
+
+  /* proyectos */
+  
+  .miportafolio {
+    padding-bottom: 2rem;
+  }
+
+  .miportafolio h2{
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .timeline {
+    position: relative;
+    margin: 2rem auto;
+    padding: 2rem 0;
+    width: 90%;
+    max-width: 800px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background-color: #f3ca00;
+}
+
+.timeline-event {
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.timeline-event:nth-child(odd) .timeline-content {
+    left: 0;
+    transform: translateX(-5%);
+    text-align: left;
+}
+
+.timeline-event:nth-child(even) .timeline-content {
+    right: 0;
+    transform: translateX(130%);
+    text-align: right;
+}
+
+.timeline-content {
+    position: relative;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 45%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-date {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f3ca00;
+    color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    z-index: 1;
+}
+
+
+/* footer */
+
+footer {
+    background-color:  #ff3a37 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes, .linksFooter, .copy{
+    margin: 0.5rem 0;
+}
+
+
+
 /* responsive */
   
   @media (min-width: 320px) and (max-width: 767px) {
@@ -194,7 +283,6 @@ input:hover {
         font-size: 1rem;
         text-decoration: none;
         text-align: center; 
-      
     }
 
     nav a {
@@ -202,8 +290,13 @@ input:hover {
     }
     
     img {
-        width: 2rem;
-        height: 2rem;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .timeline-date img {
+        width: 1.5rem;
+        height: 1.5rem;
     }
     
     .foto__perfil {
@@ -239,15 +332,46 @@ input:hover {
         flex-direction: column;
     }
 
+    /* presentacion */
     .presentacion {
         display: flex;
         flex-direction: column;
     }
 
+    /* skills */
     .img_skills {
         display: flex;
         flex-direction: column;
   }
+
+  /* proyectos */
+
+
+.timeline-content {
+    padding: 0.5rem;
+}
+
+.timeline-content h3, .timeline-content p, .timeline-content h5 {
+    text-align: center;
+}
+
+.timeline-content p {
+    font-size: 0.7rem;
+}
+
+.nav__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__footer:hover{
+    display: flex;
+    color: #d9b500;
+    
+}
+
+
 
     }
 
@@ -257,15 +381,15 @@ input:hover {
     }
     
     h2 {
-        font-size: 1rem;
+        font-size: 2rem;
     }
     
     span {
-        font-size: 1rem;
+        font-size: 2rem;
     }
     
     a {
-        font-size: 1rem;
+        font-size: 2rem;
         text-decoration: none;
         text-align: center;
     }
@@ -275,24 +399,25 @@ input:hover {
     }
     
     img {
-        width: 2rem;
-        height: 2rem;
+        width: 4rem;
+        height: 4rem;
     }
     
     .foto__perfil {
-        width: 10rem;
-        height: 10rem;
+        width: 20rem;
+        height: 20rem;
         border-radius: 50%;
     }
     
     p {
         line-height: 1.5;
         font-weight: 800;
+        font-size: 1.5rem;
     }
     
     a img{  /* Redes sociales */
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 3rem;
+        height: 3rem;
         margin: 0.5rem;
     }
     
@@ -312,21 +437,32 @@ input:hover {
         flex-direction: column;
     }
 
+    /* presentacion */
     .presentacion {
         display: flex;
         flex-direction: column;
     }
 
+    /* skills */
     .img_skills {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
   }
+
+  .nav__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  .nav__footer:hover{
+    display: flex;
+    color: #d9b500;
+    
+}
   }
   
 
-  @media (min-width: 1024px) and (max-width: 1279px) {
-
-  }
   
 
   
