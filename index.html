@@ -9,17 +9,35 @@
   </head>
 
   <body>
-    <header>
-      <div class="titulo__header">
-        <h2>Angel Uriel Elizalde Lopez <span>Mi Portafolio</span></h2>
-      </div>
-
-      <nav>
-        <a href="" class="nav__header">Inicio</a>
-        <a href="" class="nav__header">Sobre Mi</a>
-        <a href="" class="nav__header">Contactame</a>
-        <a href="" class="nav__header">Contratame</a>
-      </nav>
+      <!-- Header -->
+      <header>
+        <div class="titulo__header">
+            <h2>Angel Uriel Elizalde Lopez <span>Mi Portafolio</span></h2>
+        </div>
+    
+        <!-- Menú de navegación normal (escritorio) -->
+        <nav id="menu">
+            <a href="#inicio" class="nav__header">Inicio</a>
+            <a href="#sobre-mi" class="nav__header">Sobre Mi</a>
+            <a href="#contactame" class="nav__header">Contactame</a>
+            <a href="#contratame" class="nav__header">Contratame</a>
+        </nav>
+    
+        <!-- Botón del menú hamburguesa -->
+        <button type="button" id="menu-btn" class="menu-btn">
+            <img src="img/menu.png" alt="Menú" />
+        </button>
+    
+        <!-- Menú responsive -->
+        <div id="menu__responsive">
+          <div class="titulo__responsive">
+            <h2>Angel Uriel Elizalde Lopez <span>Mi Portafolio</span></h2>
+        </div>
+            <a href="#inicio" class="nav__header">Inicio</a>
+            <a href="#sobre-mi" class="nav__header">Sobre Mi</a>
+            <a href="#contactame" class="nav__header">Contactame</a>
+            <a href="#contratame" class="nav__header">Contratame</a>
+        </div>
     </header>
 
     <main>
@@ -202,7 +220,6 @@
         <p>Angel Uriel Elizalde Lopez &copy; 2025</p>
       </div>
     </footer>
+    <script src="/js/script.js"></script>
   </body>
-
-  <script src="/js/script.js"></script>
 </html>
