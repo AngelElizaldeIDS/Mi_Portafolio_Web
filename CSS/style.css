@@ -153,6 +153,11 @@ html {
     align-self: center;
 }
 
+
+.foto img {
+    filter:drop-shadow(1px 1px 10px  red);
+}
+
 .sobremi {
     align-content: center;
     width: 90%;
@@ -307,10 +312,54 @@ input:hover {
 }
 
 
+/* Certificados */
+
+.certificados {
+    background-color:   #151515;
+    text-align: center;
+    padding-bottom: 2rem;
+    box-shadow: 0px 1px 8px rgba(255, 255, 255, 0.6);
+    margin-top: 2rem;
+}
+
+.certificados h2 {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.box_certificados {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.targ_certificados {
+    margin: 1rem;
+    padding: 1rem;
+    background-color:  #d9b500 ;
+    border-radius: 1rem;
+    transition-duration: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 6px 7px rgba(255, 255, 255, 0.3);
+}
+
+.targ_certificados img {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
 /* footer */
 
 footer {
-    background-color:  #ff3a37 ;
+    background-color:  #fd04008f ;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -447,6 +496,16 @@ footer {
     font-size: 0.7rem;
 }
 
+
+/* Certificados */
+
+.box_certificados {
+    display: block;
+}
+
+
+/* footer */
+
 .nav__footer {
     display: flex;
     align-items: center;
@@ -560,6 +619,12 @@ nav {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
   }
+
+
+  .box_certificados {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 
   .nav__footer {
     display: flex;
